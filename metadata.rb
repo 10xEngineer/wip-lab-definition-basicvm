@@ -1,7 +1,7 @@
 maintainer "Radim Marek"
 maintainer_email "radim@10xengineer.me"
 
-use "TenxLabs::ChefHandler"
+use "TenxLabs::Handlers::Chef"
 
 # resource pools are bound to lab/component level
 # granular resource allocation possible via component composition
@@ -9,4 +9,4 @@ use "TenxLabs::ChefHandler"
 resource_pool :compute, :default
 
 version "0.0.1"
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
